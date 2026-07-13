@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Cyber Service</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f8fc;
+}
+
+/* Popup */
+.popup{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.popup-box{
+    width:90%;
+    max-width:400px;
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.popup-box h2{
+    color:red;
+    margin-bottom:15px;
+}
+
+.popup-box p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.popup-box button{
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+/* Header */
+header{
+    background:linear-gradient(90deg,#0066ff,#00b7ff);
+    padding:40px;
+    text-align:center;
+    color:#fff;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+/* Banner */
+.banner{
+    width:90%;
+    height:300px;
+    margin:30px auto;
+    border-radius:15px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.banner img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+
+}
+/* Cards */
+.cards{
+    width:90%;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card-link{
+    text-decoration:none;
+    color:inherit;
+}
+
+.card{
+    background:#fff;
+    padding:35px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    background:#0d6efd;
+    color:#fff;
+    transform:translateY(-8px);
+}
+
+/* Footer */
+footer{
+    background:#003b8f;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Notice Popup -->
+<div id="popup" class="popup">
+    <div class="popup-box">
+        <h2>📢 Important Notice</h2>
+
+        <p>
+🙏 সম্মানিত গ্রাহক,
+💻 আমাদের সকল সেবা সম্পূর্ণ অনলাইন ভিত্তিক।
+📄 তাই আমরা কোনো ধরনের প্রিন্ট আউট, হার্ড কপি বা ফিজিক্যাল ডকুমেন্ট প্রদান করি না।
+📱 আপনার প্রয়োজনীয় ডকুমেন্ট শুধুমাত্র PDF 📄 অথবা Image (ছবি) 🖼️ আকারে WhatsApp, Email 📧 অথবা অন্যান্য অনলাইন মাধ্যমে প্রদান করা হবে।
+✅ আমাদের সেবা গ্রহণ করার মাধ্যমে আপনি এই নীতিমালার সাথে সম্মতি প্রদান করছেন।
+🙏 আপনার সহযোগিতার জন্য আন্তরিক ধন্যবাদ।
+
+🙏 Dear Customer,
+💻 All our services are provided online only.
+📄 Therefore, we do not provide any printed copies, hard copies, or physical documents.
+📱 Your documents will be delivered only in PDF 📄 or Image 🖼️ format via WhatsApp, Email 📧, or other online platforms.
+✅ By using our services, you acknowledge and agree to this policy.
+💙 Thank you for your trust and cooperation.
+        </p>
+
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+<header>
+<h1>Digital Cyber Service</h1>
+<p>Trusted Online Service Center</p>
+</header>
+<marquee behavior="scroll" direction="left" scrollamount="5"
+style="background:#003b8f; color:white; padding:8px; font-size:15px; font-weight:bold;">
+
+📞 Call / WhatsApp: +91 8100656100|
+✅ 100% Trusted Digital Cyber Service |
+🌐 Online Services Only |
+❌ No Hard Copy |
+📄 PDF & Image Delivery Only
+
+</marquee>
+<div class="banner">
+    <img src="MMM.jpeg" alt="Website Banner">
+</div>
+
+<div class="cards">
+
+<a href="MY WEBSITE.html" class="card-link">
+<div class="card">
+<h2>📋 Service List</h2>
+<p>আমাদের সকল অনলাইন সার্ভিস দেখুন</p>
+</div>
+</a>
+
+<a href="about us.html" class="card-link">
+<div class="card">
+<h2>👤 About Us</h2>
+<p>আমাদের প্রতিষ্ঠান সম্পর্কে জানুন</p>
+</div>
+</a>
+
+<a href="contact.html" class="card-link">
+<div class="card">
+<h2>📞 Contact Us</h2>
+<p>যোগাযোগের সকল তথ্য</p>
+</div>
+</a>
+
+<a href="terms.html" class="card-link">
+<div class="card">
+<h2>📜 Terms & Conditions</h2>
+<p>ব্যবহারের নিয়মাবলী</p>
+</div>
+</a>
+
+</div>
+
+<footer>
+© 2026 Digital Cyber Service | All Rights Reserved
+</footer>
+
+<script>
+function closePopup(){
+    document.getElementById("popup").style.display="none";
+}
+</script>
+
+</body>
+</html>
